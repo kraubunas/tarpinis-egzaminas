@@ -1,0 +1,46 @@
+.swiper {
+  width: 76%;
+  height: 350px;
+  margin-top: 58px;
+  align-items: baseline;
+  // display: flex;
+  // align-items: flex-end;
+  // justify-content: flex-end;
+
+  .swiper-wrapper {
+    .message-bubble {
+      width: 75%;
+      height: auto;
+      margin-bottom: 86px;
+      .message {
+        background: #6696e2;
+        color: white;
+        text-align: left;
+        padding: 20px;
+        border-radius: 8px;
+      }
+
+      #customer {
+        display: flex;
+        align-items: center;
+        text-align: left;
+        margin-top: 19px;
+
+        img {
+          width: 70px;
+          height: 70px;
+          margin-right: 15px;
+        }
+
+        h2 {
+          font-size: 20px;
+        }
+
+        p {
+          color: #86878b;
+          font-size: 14px;
+        }
+      }
+    }
+  }
+}

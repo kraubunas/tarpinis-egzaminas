@@ -1,0 +1,106 @@
+#about {
+  width: 100%;
+  height: 596px;
+  margin-top: 595px;
+  background: #1c1c1c;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .logo {
+    width: 55%;
+    img {
+      width: 50%;
+      height: auto;
+      margin-left: 210px;
+      margin-right: 168px;
+    }
+  }
+
+  .about-us {
+    width: 45%;
+
+    #info {
+      h1 {
+        font-size: 30px;
+        font-weight: 600;
+        padding-bottom: 27px;
+      }
+
+      .line {
+        border-bottom: 2px solid #e27866;
+        width: 200px;
+        margin-bottom: 27px;
+      }
+
+      p {
+        font-size: 14px;
+        margin-bottom: 43px;
+      }
+    }
+
+    #contact {
+      display: flex;
+      flex-direction: column;
+
+      #eye {
+        display: flex;
+        align-items: center;
+        margin-bottom: 36px;
+
+        i {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          font-size: 30px;
+          text-align: center;
+          background: #e27866;
+          min-width: 50px;
+          min-height: 50px;
+          border-radius: 100%;
+          margin-right: 20px;
+        }
+
+        h2 {
+          font-size: 14px;
+          font-weight: 600;
+          margin-bottom: 6px;
+        }
+
+        p {
+          font-size: 14px;
+          display: inline-block;
+        }
+      }
+
+      #chat {
+        display: flex;
+        align-items: center;
+
+        i {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          font-size: 30px;
+          text-align: center;
+          background: #e27866;
+          min-width: 50px;
+          min-height: 50px;
+          border-radius: 100%;
+          margin-right: 20px;
+        }
+
+        h2 {
+          font-size: 14px;
+          font-weight: 600;
+          margin-bottom: 6px;
+        }
+
+        p {
+          font-size: 14px;
+        }
+      }
+    }
+  }
+}
