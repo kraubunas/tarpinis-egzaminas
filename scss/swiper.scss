@@ -2,7 +2,6 @@
   width: 76%;
   height: 350px;
   margin-top: 58px;
-  align-items: baseline;
   // display: flex;
   // align-items: flex-end;
   // justify-content: flex-end;
@@ -42,5 +41,22 @@
         }
       }
     }
+  }
+
+  .swiper-pagination-bullet {
+    width: 10px;
+    height: 10px;
+    border: 1px solid #e27866;
+    opacity: 1;
+    background: none;
+    transition: 0.3s;
+
+    &:hover {
+      cursor: pointer;
+      background: #e27866;
+    }
+  }
+  .swiper-pagination-bullet-active {
+    background: #e27866;
   }
 }

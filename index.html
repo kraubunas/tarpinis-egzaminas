@@ -78,24 +78,36 @@
     <img src="./app/img/christoffer-engstrom-503481-unsplash.png" alt="landscape">
     <div id="overlay-gradient"></div>
 
-    <!-- TABS for swiper -->
-    <div class="tabs">
-      <button index="1"><span>Register</span></button>
-      <button index="2"><span>Apply</span></button>
-      <button index="3"><span>Receive</span></button>
-    </div>
-
-    <div id="tabs-content">
-      <h1>Tabs with soft transitioning effect. Explained propriety of out perpetual his you.</h1>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet
-      lacus accumsan et viverra justo commodo. Proin sodales pulvinar tempor. Cum sociis natoque penatibus et magnis dis
-      parturient montes. <br><br> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet.</p>
-    </div>
-
-    <div id="images">
-      <img src="./app/img/photo-1493409137604-0901c55e4456@2x.png" alt="green">
-      <img src="./app/img/photo-1543364195-bfe6e4932397@2x.png" alt="">
-      <img src="./app/img/photo-1448387473223-5c37445527e7@2x.png" alt="">
+    <div class="info">
+      <!-- TABS for swiper -->
+      <div class="tabs">
+        <button index="1"><span>Register</span></button>
+        <button index="2"><span>Apply</span></button>
+        <button index="3"><span>Receive</span></button>
+      </div>
+      
+      <div id="tabs-content">
+        <h1>Tabs with soft transitioning effect. Explained propriety of out perpetual his you.</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit
+          amet
+          lacus accumsan et viverra justo commodo. Proin sodales pulvinar tempor. Cum sociis natoque penatibus et magnis dis
+          parturient montes. <br><br> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum
+          laoreet.</p>
+      </div>
+      
+      <div id="images">
+        <div class="horizontal">
+          <div class="plant-1">
+            <img class="plant" src="./app/img/photo-1493409137604-0901c55e4456@2x.png" alt="green">
+          </div>
+          <div class="plant-2">
+            <img class="plant" src="./app/img/photo-1543364195-bfe6e4932397@2x.png" alt="plant">
+          </div>
+        </div>
+        <div class="shoes">
+          <img src="./app/img/photo-1448387473223-5c37445527e7@2x.png" alt="">
+        </div>
+      </div>
     </div>
 
 
@@ -146,7 +158,7 @@
           lacus accumsan et viverra justo commodo.</p>
       </div>
       
-      <div id="contact">
+      <div class="contact">
         <div id="eye">
           <i class="far fa-eye"></i>
           <div>
@@ -322,6 +334,45 @@
       </div>
       <!-- If we need pagination -->
       <div class="swiper-pagination"></div>
+    </div>
+  </section>
+
+  <section id="contact">
+    <div>
+      <h1>CONTACT US</h1>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            <div id="subscription">
+              <form action="#">
+                <div id="credentials">
+                  <input type="text" id="fName" placeholder="First name" required>
+                  <input type="text" id="lName" placeholder="Last name" required>
+                  <input type="text" id="phoneNumber" placeholder="Phone number" required>
+                </div>
+            
+                <div id="radio">
+                  <label for="monthly"><input type="radio" id="monthly" name="subscription">MONTHLY</label>
+                  <label for="yearly"><input type="radio" id="yearly" name="subscription">YEARLY</label>
+            
+                </div>
+              </form>
+            
+              <button>Send</button>
+            </div>
+
+    </div>
+  </section>
+
+  <section id="footer">
+    <div id="icons">
+      <i class="fab fa-facebook-f"></i>
+      <i class="fab fa-instagram"></i>
+      <i class="fab fa-twitter"></i>
+      <i class="fab fa-pinterest-p"></i>
+      <i id="wifi" class="fas fa-wifi"></i>
+    </div>
+
+    <div class="copyright">
+      <p>© 2022 Cheshire County</p>
     </div>
   </section>
 
