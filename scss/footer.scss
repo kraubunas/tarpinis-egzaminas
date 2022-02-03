@@ -14,8 +14,13 @@
     font-size: 18px;
     word-spacing: 107px;
 
-    #wifi {
-      transform: rotate(48deg);
+    i {
+      transition: 0.3s;
+      &:hover {
+        color: white;
+        cursor: pointer;
+        opacity: 1;
+      }
     }
   }
 

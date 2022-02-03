@@ -2,11 +2,11 @@
 @import "navigation";
 @import "header";
 @import "social";
-@import "tabs";
+@import "features";
 @import "about";
 @import "awesome";
 @import "pricing";
-@import "customers";
+@import "reviews";
 @import "swiper";
 @import "contacts";
 @import "footer";
@@ -14,6 +14,10 @@
 * {
   margin: 0;
   padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 body {

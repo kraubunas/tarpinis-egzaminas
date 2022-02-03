@@ -1,4 +1,8 @@
 #navigation {
+  overflow: hidden;
+  position: fixed;
+  z-index: 1;
+  top: 0;
   width: 100%;
   height: 72px;
   background: #1c1c1c;
@@ -8,6 +12,10 @@
 
   img {
     margin: 0 148px;
+
+    &:hover {
+      cursor: pointer;
+    }
   }
 
   nav {
@@ -17,6 +25,15 @@
     a {
       text-decoration: none;
       color: #ffffff;
+      transition: 0.1s;
+
+      &:hover {
+        border-bottom: 2px solid #e27866;
+      }
+    }
+
+    .active {
+      border-bottom: 2px solid #e27866;
     }
   }
 }

@@ -26,15 +26,20 @@
   #icons {
     color: #e27866;
     width: 70%;
-    opacity: 65%;
     font-size: 30px;
     word-spacing: 107px;
     margin-left: 135px;
     margin-top: 38px;
     margin-bottom: 38px;
 
-    #wifi {
-      transform: rotate(48deg);
+    i {
+      opacity: 65%;
+      transition: 0.3s;
+
+      &:hover {
+        opacity: 1;
+        cursor: pointer;
+      }
     }
   }
 }

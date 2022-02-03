@@ -9,15 +9,17 @@
     <link rel="stylesheet" href="app/css/style.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tarpinis egzaminas</title>
+
+</head>
 <body>
   <section id="navigation">
-    <img src="./app/img/cheshire-county-hygiene-services.png" alt="logo">
-    <nav>
-      <a href="#">Features</a>
-      <a href="#">About</a>
-      <a href="#">Pricing</a>
-      <a href="#">Reviews</a>
-      <a href="#">Contact</a>
+    <a href="#header"><img src="./app/img/cheshire-county-hygiene-services.png" alt="logo"></a>
+    <nav id="buttons">
+      <a class="link" href="#features">Features</a>
+      <a class="link" href="#about">About</a>
+      <a class="link" href="#pricing">Pricing</a>
+      <a class="link" href="#reviews">Reviews</a>
+      <a class="link" href="#contact">Contact</a>
     </nav>
   </section>
 
@@ -47,13 +49,19 @@
             
             <h2>Type of subscription</h2>
             <div id="radio">
-              <label for="monthly"><input type="radio" id="monthly" name="subscription">MONTHLY</label>
-              <label for="yearly"><input type="radio" id="yearly" name="subscription">YEARLY</label>
-
+              <label class="container" for="monthly">
+                <input type="radio" id="monthly" name="subscription" required>MONTHLY
+                <span class="checkmark"></span>
+              </label>
+              <label class="container" for="yearly">
+                <input type="radio" id="yearly" name="subscription" required>YEARLY
+                <span class="checkmark"></span>
+              </label>
+              
             </div>
+            <button>Get started</button>
           </form>
 
-          <button>Get started</button>
       </div>
     </div>
 
@@ -70,79 +78,100 @@
       <i class="fab fa-instagram"></i>
       <i class="fab fa-twitter"></i>
       <i class="fab fa-pinterest-p"></i>
-      <i id="wifi" class="fas fa-wifi"></i>
+      <i class="fas fa-rss"></i>
     </div>
   </section>
 
-  <section id="tabs">
+  <section id="features">
     <img src="./app/img/christoffer-engstrom-503481-unsplash.png" alt="landscape">
     <div id="overlay-gradient"></div>
 
     <div class="info">
-      <!-- TABS for swiper -->
       <div class="tabs">
-        <button index="1"><span>Register</span></button>
-        <button index="2"><span>Apply</span></button>
-        <button index="3"><span>Receive</span></button>
+        <button class="tablinks" onclick="changeContent(event, 'content1')" id="defaultOpen"><span class="tabtext">Register</span></button>
+        <button class="tablinks" onclick="changeContent(event, 'content2')"><span class="tabtext">Apply</span></button>
+        <button class="tablinks" onclick="changeContent(event, 'content3')"><span class="tabtext">Receive</span></button>
       </div>
-      
-      <div id="tabs-content">
-        <h1>Tabs with soft transitioning effect. Explained propriety of out perpetual his you.</h1>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit
-          amet
-          lacus accumsan et viverra justo commodo. Proin sodales pulvinar tempor. Cum sociis natoque penatibus et magnis dis
-          parturient montes. <br><br> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum
-          laoreet.</p>
-      </div>
-      
-      <div id="images">
-        <div class="horizontal">
-          <div class="plant-1">
-            <img class="plant" src="./app/img/photo-1493409137604-0901c55e4456@2x.png" alt="green">
-          </div>
-          <div class="plant-2">
-            <img class="plant" src="./app/img/photo-1543364195-bfe6e4932397@2x.png" alt="plant">
-          </div>
+      <div id="content1" class="tabcontent">
+        <div id="tabs-content">
+          <h1>Tabs with soft transitioning effect. Explained propriety of out perpetual his you.</h1>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit
+            amet
+            lacus accumsan et viverra justo commodo. Proin sodales pulvinar tempor. Cum sociis natoque penatibus et magnis dis
+            parturient montes. <br><br> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum
+            laoreet.</p>
         </div>
-        <div class="shoes">
-          <img src="./app/img/photo-1448387473223-5c37445527e7@2x.png" alt="">
-        </div>
+        
+        <div id="images">
+          <div class="horizontal">
+            <div class="plant-1">
+              <img class="plant" src="./app/img/photo-1493409137604-0901c55e4456@2x.png" alt="green">
+            </div>
+            <div class="plant-2">
+              <img class="plant" src="./app/img/photo-1543364195-bfe6e4932397@2x.png" alt="plant">
+            </div>
+          </div>
+          <div class="shoes">
+            <img src="./app/img/photo-1448387473223-5c37445527e7@2x.png" alt="">
+          </div>
       </div>
-    </div>
 
+      </div>
+      <div id="content2" class="tabcontent">
+        <div id="tabs-content">
+          <h1>Tabs with soft transitioning effect. Explained propriety of out perpetual his you.</h1>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit
+            amet
+            lacus accumsan et viverra justo commodo. Proin sodales pulvinar tempor. Cum sociis natoque penatibus et magnis dis
+            parturient montes. <br><br> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum
+            laoreet.</p>
+        </div>
+        
+        <div id="images">
+          <div class="horizontal">
+            <div class="plant-1">
+              <img class="plant" src="./app/img/photo-1493409137604-0901c55e4456@2x.png" alt="green">
+            </div>
+            <div class="plant-2">
+              <img class="plant" src="./app/img/photo-1543364195-bfe6e4932397@2x.png" alt="plant">
+            </div>
+          </div>
+          <div class="shoes">
+            <img src="./app/img/photo-1448387473223-5c37445527e7@2x.png" alt="">
+          </div>
+      </div>
 
+      </div>
+      <div id="content3" class="tabcontent">
+        <div id="tabs-content">
+          <h1>Tabs with soft transitioning effect. Explained propriety of out perpetual his you.</h1>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit
+            amet
+            lacus accumsan et viverra justo commodo. Proin sodales pulvinar tempor. Cum sociis natoque penatibus et magnis dis
+            parturient montes. <br><br> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum
+            laoreet.</p>
+        </div>
+        
+        <div id="images">
+          <div class="horizontal">
+            <div class="plant-1">
+              <img class="plant" src="./app/img/photo-1493409137604-0901c55e4456@2x.png" alt="green">
+            </div>
+            <div class="plant-2">
+              <img class="plant" src="./app/img/photo-1543364195-bfe6e4932397@2x.png" alt="plant">
+            </div>
+          </div>
+          <div class="shoes">
+            <img src="./app/img/photo-1448387473223-5c37445527e7@2x.png" alt="">
+          </div>
+      </div>
 
-    
+      </div>
+
+      </div>
+  
 
   </section>
-
-  <!-- <div class="container"> -->
-    <!-- Slider main container -->
-    <!-- <div class="swiper"> -->
-      <!-- Additional required wrapper -->
-      <!-- <div class="swiper-wrapper"> -->
-        <!-- Slides -->
-        <!-- <div class="swiper-slide slide-1">
-          <span>Slide 1</span>
-        </div>
-        <div class="swiper-slide slide-2">
-          <span>Slide 2</span>
-        </div>
-        <div class="swiper-slide slide-3">
-          <span>Slide 3</span>
-        </div>
-      </div> -->
-      <!-- If we need pagination -->
-      <!-- <div class="swiper-pagination"></div> -->
-  
-      <!-- If we need navigation buttons -->
-      <!-- <div class="swiper-button-prev"></div>
-          <div class="swiper-button-next"></div> -->
-  
-    <!-- </div> -->
-  
-  
-  <!-- </div> -->
 
   <section id="about">
     <div class="logo">
@@ -259,7 +288,7 @@
 
   </section>
 
-  <section id="customers">
+  <section id="reviews">
     <h1>WHAT OUR CUSTOMERS ARE SAYING</h1>
     <p id="line"></p>
 
@@ -271,6 +300,7 @@
         <!-- Slides -->
         <div class="swiper-slide">
                   <div class="message-bubble">
+                    <div class="arrow"></div>
                     <div>
                       <p class="message">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus accusamus expedita.</p>
                     </div>
@@ -283,10 +313,11 @@
                       </div>
                     </div>
                   </div>
-</div>
+        </div>
 
-        <div class="swiper-slide"><div class="message-bubble">
-          <div>
+        <div class="swiper-slide">
+          <div class="message-bubble"><div>
+          <div class="arrow"></div>
             <p class="message">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus accusamus expedita repellat
               similique odio
               aspernatur ex.</p>
@@ -300,9 +331,10 @@
             </div>
           </div>
         </div>
-</div>
-        <div class="swiper-slide"><div class="message-bubble">
-          <div>
+        </div>
+        <div class="swiper-slide">
+        <div class="message-bubble"><div>
+        <div class="arrow"></div>
             <p class="message">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus accusamus expedita.</p>
           </div>
         
@@ -314,9 +346,10 @@
             </div>
           </div>
         </div>
-</div>
-        <div class="swiper-slide"><div class="message-bubble">
-          <div>
+        </div>
+        <div class="swiper-slide">
+        <div class="message-bubble"><div>
+        <div class="arrow"></div>
             <p class="message">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus accusamus expedita repellat
               similique odio
               aspernatur ex.</p>
@@ -330,7 +363,7 @@
             </div>
           </div>
         </div>
-</div>
+        </div>
       </div>
       <!-- If we need pagination -->
       <div class="swiper-pagination"></div>
@@ -342,21 +375,31 @@
       <h1>CONTACT US</h1>
       <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
             <div id="subscription">
-              <form action="#">
+              <form action="#" method="get">
                 <div id="credentials">
                   <input type="text" id="fName" placeholder="First name" required>
                   <input type="text" id="lName" placeholder="Last name" required>
                   <input type="text" id="phoneNumber" placeholder="Phone number" required>
                 </div>
             
-                <div id="radio">
-                  <label for="monthly"><input type="radio" id="monthly" name="subscription">MONTHLY</label>
-                  <label for="yearly"><input type="radio" id="yearly" name="subscription">YEARLY</label>
+            <div id="radio">
+              <label class="container" >
+                <input type="radio" id="monthly" name="subscription" required>MONTHLY
+                <span class="checkmark"></span>
+              </label>
+              <label class="container" >
+                <input type="radio" id="yearly" name="subscription" required>YEARLY
+                <span class="checkmark"></span>
+              </label>
             
-                </div>
+            </div>
+
+
+                
+                <button>Send</button>
+
               </form>
             
-              <button>Send</button>
             </div>
 
     </div>
@@ -368,8 +411,8 @@
       <i class="fab fa-instagram"></i>
       <i class="fab fa-twitter"></i>
       <i class="fab fa-pinterest-p"></i>
-      <i id="wifi" class="fas fa-wifi"></i>
-    </div>
+      <i class="fas fa-rss"></i> 
+   </div>
 
     <div class="copyright">
       <p>© 2022 Cheshire County</p>
@@ -379,13 +422,15 @@
 
   <!-- Swiper JS script-->
   <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
-  
+
   <!-- Swiper JS custom -->
   <script src="swiper.js"></script>
-  
+
   <!-- Custom script -->
   <script src="tabs.js"></script>
 
   <script src="script.js"></script>
+
+  <!-- <script src="script-tabs.js"></script> -->
 </body>
 </html>
