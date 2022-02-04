@@ -367,7 +367,7 @@
 
 @media (min-width: 350px) and (max-width: 767px) {
   #navigation {
-    width: auto;
+    width: 100%;
     a {
       img {
         margin: 40px;
@@ -398,6 +398,18 @@
 
   #features {
     .info {
+      // .tabs {
+      //   button {
+      //     width: 50px;
+      //     height: 50px;
+
+      //     span {
+      //       width: 50px;
+      //       height: 50px;
+      //       font-size: 9px;
+      //     }
+      //   }
+      // }
       .tabcontent {
         #tabs-content {
           justify-content: flex-start;
@@ -440,6 +452,25 @@
   #contact {
     #subscription {
       width: 98%;
+    }
+  }
+}
+
+@media (min-width: 350px) and (max-width: 432px) {
+  #features {
+    .info {
+      .tabs {
+        button {
+          width: 50px;
+          height: 50px;
+
+          span {
+            width: 50px;
+            height: 50px;
+            font-size: 9px;
+          }
+        }
+      }
     }
   }
 }
