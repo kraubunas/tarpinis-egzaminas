@@ -364,3 +364,61 @@
     }
   }
 }
+
+@media (min-width: 442px) and (max-width: 767px) {
+  #navigation {
+    a {
+      img {
+        margin: 40px;
+      }
+    }
+  }
+
+  #header {
+    #info {
+      #firstColumn {
+        p {
+          margin-top: 0;
+        }
+      }
+    }
+  }
+
+  #features {
+    .info {
+      .tabcontent {
+        #tabs-content {
+          justify-content: flex-start;
+        }
+      }
+    }
+  }
+
+  #awesome {
+    height: auto;
+    #columns {
+      flex-wrap: wrap;
+      gap: 10px;
+      .item {
+        p {
+          margin-bottom: 10px;
+        }
+      }
+    }
+  }
+
+  #reviews {
+    height: auto;
+  }
+
+  .swiper {
+    margin-top: 50px;
+    height: auto;
+
+    .swiper-wrapper {
+      .swiper-slide {
+        align-items: flex-end;
+      }
+    }
+  }
+}
