@@ -365,12 +365,20 @@
   }
 }
 
-@media (min-width: 442px) and (max-width: 767px) {
+@media (min-width: 350px) and (max-width: 767px) {
   #navigation {
+    width: auto;
     a {
       img {
         margin: 40px;
       }
+    }
+
+    #top-menu {
+      width: auto;
+      // #burger {
+      //   margin: 40px;
+      // }
     }
   }
 
@@ -380,6 +388,10 @@
         p {
           margin-top: 0;
         }
+      }
+
+      #subscription {
+        width: auto;
       }
     }
   }
@@ -392,6 +404,10 @@
         }
       }
     }
+  }
+
+  #about {
+    height: auto;
   }
 
   #awesome {
@@ -419,6 +435,11 @@
       .swiper-slide {
         align-items: flex-end;
       }
+    }
+  }
+  #contact {
+    #subscription {
+      width: 98%;
     }
   }
 }

@@ -48,10 +48,6 @@
       font-size: 20px;
       transition: 0.3s;
 
-      .rotateZ {
-        transform: rotateZ(-90deg);
-      }
-
       &:hover {
         cursor: pointer;
         color: #e27866;
