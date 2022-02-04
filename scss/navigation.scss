@@ -10,18 +10,24 @@
   align-items: center;
   justify-content: space-between;
 
-  img {
-    margin: 0 148px;
+  a {
+    width: 100%;
+    img {
+      margin: 0 148px;
 
-    &:hover {
-      cursor: pointer;
+      &:hover {
+        cursor: pointer;
+      }
     }
   }
 
-  nav {
-    margin: 0 148px;
+  #top-menu {
+    width: 100%;
+    // margin: 0 148px;
     word-spacing: 44px;
     font-size: 14px;
+    margin-left: 70px;
+    margin-right: 38px;
     a {
       text-decoration: none;
       color: #ffffff;
@@ -34,6 +40,22 @@
 
     .active {
       border-bottom: 2px solid #e27866;
+    }
+
+    #burger {
+      display: none;
+      color: white;
+      font-size: 20px;
+      transition: 0.3s;
+
+      .rotateZ {
+        transform: rotateZ(-90deg);
+      }
+
+      &:hover {
+        cursor: pointer;
+        color: #e27866;
+      }
     }
   }
 }

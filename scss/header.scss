@@ -4,6 +4,22 @@
   color: white;
   margin-top: 72px;
 
+  img {
+    width: 100%;
+    height: 639px;
+    object-fit: cover;
+    object-position: center;
+    position: absolute;
+  }
+
+  #overlay {
+    width: 100%;
+    height: 639px;
+    background: black;
+    opacity: 63%;
+    position: absolute;
+  }
+
   #info {
     display: flex;
     position: absolute;
@@ -211,21 +227,5 @@
         }
       }
     }
-  }
-
-  img {
-    width: 100%;
-    height: 639px;
-    object-fit: cover;
-    object-position: center;
-    position: absolute;
-  }
-
-  #overlay {
-    width: 100%;
-    height: 639px;
-    background: black;
-    opacity: 63%;
-    position: absolute;
   }
 }

@@ -1,0 +1,366 @@
+@media (min-width: 768px) and (max-width: 1023px) {
+  #header {
+    #info {
+      gap: 50px;
+      #firstColumn {
+        width: 50%;
+        margin-left: 50px;
+      }
+
+      #subscription {
+        width: 50%;
+        margin-right: 50px;
+        margin-left: 0;
+
+        form {
+          h2 {
+            margin-left: 35px;
+          }
+        }
+      }
+    }
+  }
+
+  #social {
+    gap: 25px;
+    #socialContent {
+      width: 50%;
+      margin-left: 50px;
+    }
+
+    #icons {
+      width: 50%;
+      margin-left: 0;
+      margin-right: 50px;
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+    }
+  }
+
+  #features {
+    .info {
+      gap: 25px;
+      .tabs {
+        button {
+          margin-left: 50px;
+        }
+      }
+      .tabcontent {
+        gap: 25px;
+        #tabs-content {
+          h1 {
+            margin-left: 0;
+            margin-right: 0;
+            font-size: 28px;
+          }
+
+          p {
+            margin-left: 0;
+            margin-right: 0;
+          }
+        }
+
+        #images {
+          margin-right: 50px;
+          gap: 10px;
+          .horizontal {
+            gap: 10px;
+            margin-right: 0;
+
+            .plant {
+              width: 200px;
+              height: 200px;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  #about {
+    .logo {
+      width: 50%;
+      img {
+        width: 75%;
+        height: auto;
+        margin-left: 50px;
+        margin-right: 0;
+      }
+    }
+
+    .about-us {
+      width: 50%;
+      margin-right: 50px;
+    }
+  }
+
+  .swiper {
+    height: 400px;
+    margin-top: 0;
+    .swiper-wrapper {
+      .swiper-slide {
+        .message-bubble {
+          .arrow {
+            bottom: 162px;
+            left: 55px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 768px) and (max-width: 927px) {
+  #features {
+    .info {
+      .tabcontent {
+        #tabs-content {
+          width: 50%;
+
+          p {
+            font-size: 10px;
+          }
+        }
+        #images {
+          width: 300px;
+          .horizontal {
+            width: 100%;
+            .plant {
+              width: 100%;
+              height: 100%;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 767px) {
+  #header {
+    height: 1000px;
+
+    img {
+      height: 1000px;
+    }
+
+    #overlay {
+      height: 1000px;
+    }
+    #info {
+      height: 1000px;
+      flex-direction: column;
+      align-items: center;
+
+      #firstColumn {
+        margin-left: 0;
+        text-align: center;
+
+        img {
+          margin-top: 30px;
+          margin-left: -123.5px;
+        }
+
+        h1 {
+          width: 100%;
+        }
+
+        #line {
+          display: inline-block;
+        }
+
+        p {
+          width: 100%;
+        }
+      }
+
+      #subscription {
+        margin: 0;
+        margin-top: 50px;
+      }
+    }
+  }
+
+  #social {
+    flex-direction: column;
+    height: auto;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    #socialContent {
+      width: 100%;
+      margin: 0;
+
+      h2 {
+        margin: 0;
+        width: 100%;
+      }
+
+      p {
+        margin-top: 10px;
+        width: 100%;
+      }
+    }
+
+    #icons {
+      width: 100%;
+      margin: 0;
+      margin-top: 25px;
+    }
+  }
+
+  #features {
+    .info {
+      flex-direction: column;
+
+      .tabs {
+        width: 100%;
+        flex-direction: row;
+        justify-content: space-around;
+        gap: 25px;
+        // margin-left: 208.5px;
+
+        button {
+          margin-top: 50px;
+          margin-left: 0;
+          &:nth-of-type(1) {
+            margin-top: 50px;
+          }
+        }
+      }
+
+      .tabcontent {
+        #tabs-content {
+          justify-content: center;
+          align-items: center;
+          width: 50%;
+          margin-left: 50px;
+          h1 {
+            width: 100%;
+            margin-top: 0;
+            font-size: 24px;
+          }
+
+          p {
+            width: 100%;
+            font-size: 12px;
+          }
+        }
+
+        #images {
+          width: 100%;
+          margin: 0;
+          width: 50%;
+          margin-right: 50px;
+
+          .horizontal {
+            width: 100%;
+            justify-content: center;
+            align-items: center;
+          }
+        }
+      }
+    }
+  }
+
+  #about {
+    flex-direction: column;
+    height: 700px;
+
+    .logo {
+      width: 75%;
+      text-align: center;
+      padding-top: 40px;
+      img {
+        // margin-bottom: 25px;
+        margin: 25px 0;
+      }
+    }
+
+    .about-us {
+      width: 75%;
+      text-align: center;
+
+      .line {
+        display: inline-block;
+      }
+
+      .contact {
+        width: 100%;
+        #eye {
+          flex-direction: column;
+          margin-bottom: 20px;
+
+          i {
+            margin-right: 0;
+            margin-bottom: 15px;
+          }
+        }
+        #chat {
+          flex-direction: column;
+          margin-bottom: 50px;
+
+          i {
+            margin-right: 0;
+            margin-bottom: 15px;
+          }
+        }
+      }
+    }
+  }
+
+  #reviews {
+    height: 500px;
+    #line {
+      margin-bottom: 0;
+    }
+  }
+
+  .swiper {
+    height: 300px;
+    margin-top: 0px;
+
+    .swiper-wrapper {
+      .swiper-slide {
+        .message-bubble {
+          .arrow {
+            left: 91px;
+          }
+        }
+      }
+    }
+  }
+
+  #footer {
+    flex-direction: column;
+
+    #icons {
+      display: flex;
+      justify-content: space-around;
+      margin-bottom: 20px;
+    }
+  }
+}
+
+@media (max-width: 1023px) {
+  #navigation {
+    #top-menu {
+      a {
+        display: none;
+      }
+      #burger {
+        display: flex;
+        justify-content: flex-end;
+        margin-right: 50px;
+      }
+      #close {
+        display: flex;
+        justify-content: flex-end;
+        margin-right: 50px;
+      }
+    }
+  }
+}

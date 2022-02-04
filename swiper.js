@@ -1,8 +1,21 @@
 const swiper = new Swiper('.swiper', {
-    slidesPerView: 3,
 
     mousewheel: {
         invert: true,
+    },
+
+    breakpoints: {
+        1117: {
+            slidesPerView: 3,
+        },
+
+        768: {
+            slidesPerView: 2,
+        },
+
+        0: {
+            slidesPerView: 1,
+        }
     },
 
     // Optional parameters
